@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Bash</title>
+  <script type="text/javascript" src="sketch.js"></script>
+  <link type="text/css" rel="stylesheet" src="style.css" />
+</head>
+
+<body>
+  <div>
+    <p>Hi there!</p>
+    <p>
+      <label class="specifier">Name</label>
+      <input type="text" id="name" value="Type in your name" class="entry" onFocus="clearTextField(this)" onBlur="clearTextField(this)" autocomplete="off" />
+    </p>
+    <p>
+      <label class="specifier">Password</label>
+      <input type="password" id="pass" value="" class="entry" autocomplete="off" onFocus="clearPasswordField(this)" />
+    </p>
+    <button id="button_go" onClick="authenticate()">GO!</button>
+    <button id="button_different" onClick="diffname()">Try a different name?</button>
+    <p>
+      When you are on next page, press and drag mouse across the screen.
+      Do this for a while. Don't panic if browser hangs, it will return to normal after few seconds.
+    </p>
+
+  </div>
+</body>
+
+</html>
