@@ -1,8 +1,6 @@
 # CNLabAssignment3
 ## Socket Programming
 
----
-
 I started doing my Computer Networks Assignment on socket programming in C. It’s tough believe me. I think it’s one of the toughest things I have taken up. It’s not completed yet and I don’t believe it will in anytime near. I felt good yesterday that I have finally started studying. I sat for an hour 5:30 pm to 6:30 pm continuous and read Socket programming introduction text from [Computer Networking: A Top-Down Approach](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=2ahUKEwiw_ee-n43eAhWKvI8KHbfgBrIQFjACegQIBxAB&url=https%3A%2F%2Fwww.pearson.com%2Fus%2Fhigher-education%2Fprogram%2FKurose-Computer-Networking-A-Top-Down-Approach-7th-Edition%2FPGM1101673.html&usg=AOvVaw0-V5o0VDnk7n3vD0h9TolM) written by Kurose and Ross. It was a good read after so long break from reading textbooks.
 
 Next, I searched the Internet to implement the same \[**a multithreaded web server that implements a subset of HTTP/1.0 in the GET and HEAD response it sends to the client**\]  in C. So, there are several resources but for a beginner as me, it’s not only tough to comprehend some of the advanced topics but tougher it is to segregate the advanced stuffs apart. I came across [geeksforgeeks.org’](https://www.geeksforgeeks.org/socket-programming-cc/)s article that formed the basis of my assignment. However, I still have to incorporate many changes into it.
@@ -29,7 +27,7 @@ Multithreading will take another week, if I start doing, perhaps. But for now, *
 1.  We need two codes – one for server, other for client
 2.  We will work in Linux system (I used Ubuntu 18.04.1)
 3.  We will not be scared of data types – POSIX has some weird [data types](http://man7.org/linux/man-pages/man0/sys_types.h.0p.html) (I don’t know the details or the differences, just know that your gcc compiler will tell which identifier format ‘`%d`’ or ‘`%lu`’ etc, to use)
-4.  [Linux man pages](http://man7.org/linux/man-pages/man2/socket.2.html) should be referred to for your system specific parameters to functions (system calls). Example, `man 7 socket`
+4.  [Linux man pages](http://man7.org/linux/man-pages/man2/socket.2.html) should be referred to for your system specific parameters to functions (system calls). Example, `man 7 socket` [link to all manuals needed](https://github.com/devprabal/CNLabAssignment3/blob/master/manual_for_sockets)
 5.  Strictly don’t know everything. You are advised to only know how to implement most things, what parameters to pass, what the function returns and type of those parameters.
 6.  C `struct sockaddr_in` is your tool to play with, however, system call functions like `struct sockaddr`. So, the former should be type casted into the later. Don’t worry about the fields of sockaddr.
 7.  File handle and socket handle are analogous.
